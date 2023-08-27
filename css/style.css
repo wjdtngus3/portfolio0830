@@ -1,0 +1,109 @@
+/* Global한 설정 */
+:root{
+   /* App Color material UI 가이드라인에 따른 변수명*/
+   --color-primary: var(--color-black);
+   --color-primary-variant: var(--color-gray);
+   --color-accent: var(--color-blue);
+   --color-accent-variant: var(--color-orange);
+   --color-text: var(--color-white);
+   
+   
+    /* Colors */
+
+--color-white: #ffffff;
+
+--color-black: #050a13;
+
+--color-blue: #03e8f9;
+
+--color-orange: #fd6413;
+
+--color-gray: #1b1e26;
+}
+
+
+
+/* 보다 직관적으로 너비와 높이를 명시할 수 있도록  */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1,h2,h3,p,ul{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+/*버튼모양 사라지게*/
+button{
+    background-color: transparent;
+    outline:0;
+    border:0;
+}
+
+button:focus{
+    outline: 1px solid var(--color-accent);
+}
+
+/* Header */
+.header{
+    background-color: #050a13;
+    position: fixed;
+    top:0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;   /*수평으로 나란히 배치*/
+    justify-content: space-between; /*아이템사이 간격주기*/
+    align-items: center; /*아이템 중간정렬*/
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__logo__img{
+    width: 36px;
+    height: 36px;
+}
+
+.header__logo__title{
+    font-size: 1.8rem; /*기본 브라우저 사이즈 1.8배*/
+    color: white;
+}
+
+.header__menu{
+    display: flex;
+    gap: 4px;
+}
+
+.header__menu__item{
+    padding: 8px 16px;
+}
+
+.header__menu__item:hover {
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.header__menu__item.active {
+    border: 1px solid var(--color --color-accent);
+    border-radius: 4px;  
+}
+
+
+
+

@@ -19,21 +19,21 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <div>
-            <img src="images/home.png" alt="home">
-            <h1><a href="#"></a>Hyun</h1> <!-- # 혼자만 있는 태그는 홈으로 감 -->
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo__img" src="images/profile.png" alt="home">
+            <h1 class="header__logo__title"><a href="#"></a>Hyun</h1> <!-- # 혼자만 있는 태그는 홈으로 감 -->
+        </div>    
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#work">My work</a></li>
-                    <li><a href="#testimonial">Testimonial</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="header__menu">
+                    <li><a class="header__menu__item active"href="#home">Home</a></li>
+                    <li><a class="header__menu__item"href="#about">About</a></li>
+                    <li><a class="header__menu__item"href="#skills">Skills</a></li>
+                    <li><a class="header__menu__item"href="#work">My work</a></li>
+                    <li><a class="header__menu__item"href="#testimonial">Testimonial</a></li>
+                    <li><a class="header__menu__item"href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
     <!-- Main -->
     <main>
@@ -234,7 +234,9 @@
                 <li><img src="images/testimonials/people1.webp">
                     <div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab amet maiores expedita iure, impedit quisquam in fugit nam hic adipisci magni pariatur, exercitationem eum quibusdam blanditiis. Quis, aspernatur odio!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab amet maiores expedita iure,
+                            impedit quisquam in fugit nam hic adipisci magni pariatur, exercitationem eum quibusdam
+                            blanditiis. Quis, aspernatur odio!
                         </p>
                         <p><a href="#">James Kim</a>/Google</p>
                     </div>
@@ -242,7 +244,9 @@
                 <li><img src="images/testimonials/people2.webp">
                     <div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab amet maiores expedita iure, impedit quisquam in fugit nam hic adipisci magni pariatur, exercitationem eum quibusdam blanditiis. Quis, aspernatur odio!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab amet maiores expedita iure,
+                            impedit quisquam in fugit nam hic adipisci magni pariatur, exercitationem eum quibusdam
+                            blanditiis. Quis, aspernatur odio!
                         </p>
                         <p><a href="#">James Kim</a>/Google</p>
                     </div>
@@ -250,7 +254,9 @@
                 <li><img src="images/testimonials/people3.webp">
                     <div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab amet maiores expedita iure, impedit quisquam in fugit nam hic adipisci magni pariatur, exercitationem eum quibusdam blanditiis. Quis, aspernatur odio!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab amet maiores expedita iure,
+                            impedit quisquam in fugit nam hic adipisci magni pariatur, exercitationem eum quibusdam
+                            blanditiis. Quis, aspernatur odio!
                         </p>
                         <p><a href="#">James Kim</a>/Google</p>
                     </div>
@@ -258,10 +264,21 @@
             </ul>
         </section>
         <!-- Arrow up -->
-        <aside></aside>
+        <aside>
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+        </aside>
     </main>
     <!-- Footer -->
-    <footer id="contact"></footer>
+    <footer id="contact">
+        <h2>Lets Talk</h2>
+        <p>bm4564@naver.com</p>
+        <ul>
+            <li>
+                <a href="http://github.com/wjdtngus3"><i class="fa-brands fa-github"></i></a>
+            </li>
+        </ul>
+        <p>Hyun - All rights reserved</p>
+    </footer>
 
 
 </body>
