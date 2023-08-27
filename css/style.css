@@ -160,7 +160,50 @@ button:focus{
     color: var(--color-text);
     outline: 2px solid var(--color-accent); /*border로 했더니 컨텐츠 밀림현상이 일어나서 outline으로 해결*/
 }
+/* About*/
+.magors{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
 
+.magor{
+    background-color: var(--color-primary-variant);
+    padding: 3rem 2rem;
+    color: var(--color-text);
+    border-radius: 1rem;
+}
 
+.magor__icon {
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
+}
 
+.magor__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
+.magor:hover .magor__icon{
+    transform: rotate(-15deg) scale(1.2);
+}
+
+.jobs{
+    text-align: start;
+}
+
+.job{
+    display: flex;
+    align-items: center; /*수직 중간정렬*/
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.job__period{
+    color: var(--color-primary);
+    font-size: 0.8rem;
+}
