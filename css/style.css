@@ -80,6 +80,7 @@ button:focus{
     display: flex;   /*수평으로 나란히 배치*/
     justify-content: space-between; /*아이템사이 간격주기*/
     align-items: center; /*아이템 중간정렬*/
+    z-index: 1;
 }
 
 .header__logo{
@@ -237,7 +238,7 @@ button:focus{
 
 .skills__tools{
     padding: 1rem;
-
+    background-color: white;
 }
 
 .skills__etc{
@@ -267,4 +268,74 @@ button:focus{
 .bar__value{
     background-color: var(--color-accent-variant);
     height: 3px;
+}
+
+/* Work */ 
+#work {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem;
+    gap: 1rem;
+}
+
+.category{
+    position: relative;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    padding: 0.5rem 3rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-accent);
+    cursor: pointer;
+}
+
+.category__count {
+    position: absolute;
+    top:-20px;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    line-height: 28px;
+    background-color: var(--color-accent-variant);
+    color: var(--color-text);
+}
+
+/*vem 이용한 태그명*/
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: (2,1fr);
+    gap: 1rem;
+}
+
+.project{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.project__img{
+    width: 100%;
+}
+
+.project__metadata{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project__metadata:hover{
+    opacity: 0.8;
 }
