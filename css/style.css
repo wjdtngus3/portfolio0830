@@ -1,4 +1,4 @@
-/* Global한 설정 */
+/* Global*/
 :root{
    /* App Color material UI 가이드라인에 따른 변수명*/
    --color-primary: var(--color-black);
@@ -20,6 +20,11 @@
 --color-gray: #1b1e26;
 }
 
+html{
+    font-size: 100%;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
 
 
 /* 보다 직관적으로 너비와 높이를 명시할 수 있도록  */
@@ -70,7 +75,7 @@ button:focus{
     margin: 0.5rem 0;
 }
 
-/* Header */
+/* Header */    
 .header{
     background-color: #050a13;
     position: fixed;
@@ -111,7 +116,7 @@ button:focus{
 .header__menu__item:hover {
     border-bottom: 1px solid var(--color-accent);
 }
-
+/* --- */
 .header__menu__item.active {
     border: 1px solid var(--color-accent);
     border-radius: 4px;  
@@ -149,7 +154,7 @@ button:focus{
 
 .home__contact {
     display: inline-block;
-    background-color: var(--color-accent);
+    background-color: var(--color-accent)   ;
     color: var(--color-black);
     padding: 0.5rem 1rem;
     margin: 2rem;
@@ -238,7 +243,7 @@ button:focus{
 
 .skills__tools{
     padding: 1rem;
-    background-color: white;
+    
 }
 
 .skills__etc{
@@ -277,34 +282,6 @@ button:focus{
 
 }
 
-.categories {
-    display: flex;
-    justify-content: center;
-    margin: 2.5rem;
-    gap: 1rem;
-}
-
-.category{
-    position: relative;
-    color: var(--color-text);
-    font-size: 1.1rem;
-    padding: 0.5rem 3rem;
-    border-radius: 4px;
-    border: 1px solid var(--color-accent);
-    cursor: pointer;
-}
-
-.category__count {
-    position: absolute;
-    top:-20px;
-    width: 28px;
-    height: 28px;
-    border-radius: 100%;
-    line-height: 28px;
-    background-color: var(--color-accent-variant);
-    color: var(--color-text);
-}
-
 /*vem 이용한 태그명*/
 .projects{
     display: grid;
@@ -316,7 +293,7 @@ button:focus{
 .project{
     position: relative;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 .project__img{
     width: 100%;
@@ -340,7 +317,7 @@ button:focus{
     opacity: 0.8;
 }
 
-/* testimonials */
+/* Famous saying */
 .testimonials {
     margin: 3rem;
 }
@@ -363,10 +340,47 @@ button:focus{
     padding: 1rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 1.1rem;
 }
 
 .testimonial__bubble__name{
     color: var(--color-accent);
     font-weight: bold;
     filter:brightness(70%);
+}
+/* Arrow-up */
+.arrow-up {
+    border-color: black;
+    background-color: #050a13;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    text-align: center;
+    box-shadow: 5px 5px 0px 0px var(--color-accent);
+    border-radius: 50%;
+}
+
+/* Footer */
+#contact {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+.contact__links{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.contact__links{
+    transition: color 250ms easa-in;
+}
+
+.contact__link:hover{
+    color: var(--color-accent);
 }
